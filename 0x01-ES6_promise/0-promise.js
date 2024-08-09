@@ -1,4 +1,10 @@
-import getResponseFromAPI from "./0-promise.js";
-
-const response = getResponseFromAPI();
-console.log(response instanceof Promise);
+export default function getResponseFromAPI() {
+  const success = true;
+  return new Promise((resolve, reject) => {
+    if (success) {
+      resolve();
+    } else {
+      reject();
+    }
+  });
+i}
